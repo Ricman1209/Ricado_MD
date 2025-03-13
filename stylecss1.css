@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+h1 {
+    color: purple;
+    background: yellow;
+    text-align: center;
+    font-family: "Shrikhand", cursive;
+    font-size: 50px;
+}
+
+.img-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    border-color: blue;
+    border-width: 10px;
+    border-style: double;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    color: darkgreen;
+    font-size: 18px;
+    background: yellow;
+    text-align: center;
+    font-family: "Times New Roman", Verdana, Arial, sans-serif;
+}
+
+body {
+    margin: 50px;
+    border-color: darkblue;
+    border-width: 2px;
+    border-style: solid;
+    padding: 20px;
+}
