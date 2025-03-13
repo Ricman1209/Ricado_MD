@@ -1,0 +1,84 @@
+body {
+    background: linear-gradient(0deg, #eed953 0%, #ffffff 100%);
+    margin: 20px 5%; 
+}
+
+img {
+    padding: 20px;
+    width: 400px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #eed953 0%, #ffffff 100%);
+}
+
+.imagen-div {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Courier New', monospace; 
+    color: purple;
+    font-size: 70px;
+    text-shadow: 3px 5px 7px #c26a05;
+    transform: rotate(15deg);
+}
+
+.intro {
+    background: black;
+    color: white;
+    font-size: 24px;
+    padding: 25px;
+}
+
+.nav {
+    font-size: 24px;
+    margin-top: 50px;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a:link,
+.nav a:visited {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.nav a:hover {
+    background-color: blue; 
+    color: yellow; 
+    text-decoration: underline;
+}
+
+.nav a:active {
+    color: red;
+}
+
+#manzana-card, #chocolate-card, #fresa-card {
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    border-radius: 30px;
+}
+
+#manzana-card {
+    background: linear-gradient(0deg, darkblue 0%, lightcyan 100%);
+}
+
+#chocolate-card {
+    background: linear-gradient(0deg, brown 0%, black 100%);
+}
+
+#fresa-card {
+    background: linear-gradient(0deg, red 0%, green 100%);
+}
