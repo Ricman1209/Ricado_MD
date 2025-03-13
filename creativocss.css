@@ -1,0 +1,17 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.hero-card {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-card .card-body {
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
