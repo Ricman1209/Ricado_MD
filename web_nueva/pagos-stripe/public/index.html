@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Stripe Test</title>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <button id="checkout-button">Pagar</button>
+
+    <script>
+        const stripe = Stripe("pk_test_51RLvXZRuFUFns38CSI8N3nO5GkKfySgh2uly8wWRd6MjWVjfUbuuuoKU8is60HV9ywtkzgUv7g7b6cFJ6XHcjy8x00voCaQ1n6");
+        document.getElementById("checkout-button").addEventListener("click", async () => {
+            const response = await fetch("/checkout", { method: "POST" });
+            const session = await response.json();
+            stripe.redirectToCheckout({ sessionId: session.id });
+        });
+    </script>
+</body>
+</html>
