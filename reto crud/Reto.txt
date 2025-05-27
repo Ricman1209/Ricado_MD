@@ -1,0 +1,15 @@
+Reto: 
+
+1-Crear una aplicación CRUD que peremita generar el siguiente tipo de docimento:
+    {
+        id:id,
+        marca:marca,
+        modelo:modelo,
+        placa:placa,
+        color:color,
+        año,año
+    }
+
+2-Debe crear un formulario que permita realizar inserciones, actualizaciones,consultas y eliminaciones.
+
+3-Subir a su repositori como una carperta con nombre "RETO_CRUD"
