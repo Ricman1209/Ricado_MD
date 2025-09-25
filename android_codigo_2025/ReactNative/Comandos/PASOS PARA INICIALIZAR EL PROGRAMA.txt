@@ -1,0 +1,72 @@
+En una terminal ejecutar el siguiente código
+
+mysql -u root -p
+
+Creamos una base de datos
+
+CREATE DATABASE 
+estacionamiento_universitario;
+
+Fuera de la terminal de MySQL ejecutar
+
+mysql -u root -p estacionamiento_universitario < estacionamiento_universitario.sql
+
+Todo lo anterior es para importar lo de la base de datos del repositorio a la nueva que se acaba de crear
+
+
+
+
+Ahora se instalan las dependencias necesarias dentro de la carpeta Backend
+
+cd Backend
+npm init -y
+npm install express mysql2 dotenv cors
+
+
+Dentro de la carpeta Backend/config/database.js
+
+Dentro de la carpeta nos aseguramos de que la estructura sea igual a la siguiente:
+
+// Backend/config/database.js
+const mysql = require('mysql2');
+
+// Conexión con pool para mejor rendimiento
+const pool = mysql.createPool({
+  host: process.env.DB_HOST || 'localhost',
+  user: process.env.DB_USER || 'root',
+  password: process.env.DB_PASS || '',
+  database: process.env.DB_NAME || 'estacionamiento_universitario',
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0
+});
+
+module.exports = pool.promise();
+
+Además de que nos debemos de asegurar de que en la fila "  password: process.env.DB_PASS || ''," debemos de colocar nuestra contraseña
+
+
+
+
+Dentro de los controladores y las rutas que se encuentran dentro de Backend/routes, se deben de cambiar las URL para que se pueda establecer de forma correcta la conexión
+
+
+
+Dentro de Backend se debe de crear el archivo con nombre exacto de ".env"
+Dentro del .env se deben de alojar los datos de acceso para la base de datos
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=
+DB_NAME=estacionamiento_universitario
+PORT=3000
+
+
+Se prueba la conexión con
+
+node Backend/server.js
+
+
+
+
+

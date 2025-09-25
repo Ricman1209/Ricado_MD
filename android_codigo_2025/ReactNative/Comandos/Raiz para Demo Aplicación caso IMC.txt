@@ -1,0 +1,13 @@
+📦 root
+ ┣ 📜 App.js
+ ┗ 📂 src
+    ┣ 📂 components
+    ┃ ┣ 📜 InputField.js
+    ┃ ┗ 📜 ResultCard.js
+    ┗ 📂 screens
+       ┣ 📜 HomeScreen.js
+       ┗ 📜 HistoryScreen.js
+
+npx create-expo-app@latest DemoIMC --template blank
+cd..
+npx expo install react-dom react-native-web @expo/metro-runtime
