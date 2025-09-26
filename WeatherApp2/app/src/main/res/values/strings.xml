@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">WeatherApp</string>
     <string name="openweather_key">d8ea84125c069db25fd3117f57492548</string>
+    <string name="openweather_key_name">Default</string>
 </resources>
-
